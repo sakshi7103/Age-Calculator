@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 500px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #add8e6;
+}
+h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+
+.input input {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.input input:focus {
+    outline: none;
+    border: 2px solid  #add8e6;
+}
+
+.btn button {
+    background-color: #add8e6;
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #add8e6;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #8fed8f; 
+    font-weight: bolder;
+}
+#error {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ff6666; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.7em; 
+    }
+
+    h2 {
+        font-size: 2.2em; 
+    }
+
+    .input input {
+        width: 100%; 
+    }
+
+    .btn button {
+        font-size: 1em; 
+        padding: 8px 16px; /
+    }
+
+    #result, #error {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 15px; 
+    }
+
+    h1 {
+        font-size: 1.7em; 
+    }
+
+    h2 {
+        font-size: 1em; 
+    }
+
+    .input input {
+        font-size: 0.9em; 
+    }
+
+    .btn button {
+        font-size: 0.9em; 
+        padding: 7px 14px; 
+    }
+}
