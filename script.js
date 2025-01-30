@@ -25,7 +25,7 @@ function calculateAge(){
     if(month < 0 || (month === 0 && day < 0))
     {
         year--;
-       
+        month += 12;
     }
     
     result.textContent=`You are ${year} Year,${month} Month,${day} Day Old🎉🎊`; 
